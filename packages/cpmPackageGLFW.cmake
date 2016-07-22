@@ -1,0 +1,9 @@
+set(GLFW_BUILD_EXAMPLES OFF)
+set(GLFW_BUILD_TESTS OFF)
+set(GLFW_INSTALL OFF)
+
+add_git_dependency(${DEPENDENCY} "https://github.com/glfw/glfw.git" ${ADD_DEPENDENCY_GIT_TAG})
+
+add_subdirectory(${DEPENDENCY_PACKAGE_SOURCE_DIR} ${DEPENDENCY_PACKAGE_DIR})
+		
+set(${DEPENDENCY}_INCLUDE "${DEPENDENCY_PACKAGE_DIR}/include")
