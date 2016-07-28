@@ -1,7 +1,7 @@
 CMake AddPackage
 ======
 
-This is a CMake package handler. It will attempt to clone a git repository and add a cmake project into your own project that will compile the package. However not all of the packages you want are git and cmake based therefore on some of the packages it just download the needed files from where it can get them. Which means custom packages.
+This is a CMake package handler. It will attempt to download a package (either cloning a git repo or downloading precompiled libs) and add it to your project. If it is a git repo and cmake based it will add the package project to your project.
 
 _It is pretty rough at the moment but does handle a few libs pretty well. I have also only tested on windows thus far and some of the download only packages will likely only work on windows._
 
