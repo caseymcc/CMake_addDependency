@@ -21,7 +21,7 @@ add_package("opencl")
 add_package("glew" VERSION "2.0.0")
 ```
 
-Providing the optional VERSION tells the packager which version to get, assuming all goes well the packager creates a few CMake vars that can be used to add the include directory and libraries in yout project.
+Providing the optional VERSION tells the packager which version to get, assuming all goes well the packager creates a few CMake vars that can be used to add the include directory and libraries in your project.
 ```
 ${PACKAGE_NAME}_ROOT
 ${PACKAGE_NAME}_INCLUDE_DIRS 
